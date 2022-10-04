@@ -13,3 +13,10 @@ spring:
     username: GALAXY_DEMO
     password: 1234
     driver-class-name: oracle.jdbc.driver.OracleDriver
+
+# Registry Client
+eureka:
+  client:
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8889/eureka
