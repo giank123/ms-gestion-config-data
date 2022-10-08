@@ -22,18 +22,18 @@ eureka:
       defaultZone: http://localhost:8889/eureka
 
 # Metrics related configurations
-#management:
- # endpoint:
+management:
+  endpoint:
   #  metrics:
    #   enabled: true
     #prometheus: true
      # enabled: true
     #gateway:
     #  enabled: true       
-  #endpoints:
-   #   web:
-    #    exposure:
-     #     include: "*"
+  endpoints:
+      web:
+        exposure:
+          include: "*"
   #metrics:
    # export:
     #  prometheus:
