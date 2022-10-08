@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 8084
   servlet:
     context-path: /ms-instructor
     
@@ -22,17 +22,19 @@ eureka:
       defaultZone: http://localhost:8889/eureka
 
 # Metrics related configurations
-management:
-  endpoint:
-    metrics:
-      enabled: true
-    prometheus: true
-      enabled: true
-  endpoints:
-      web:
-        exposure:
-          include: "*"
-  metrics:
-    export:
-      prometheus:
-        enabled: true
+#management:
+ # endpoint:
+  #  metrics:
+   #   enabled: true
+    #prometheus: true
+     # enabled: true
+    #gateway:
+    #  enabled: true       
+  #endpoints:
+   #   web:
+    #    exposure:
+     #     include: "*"
+  #metrics:
+   # export:
+    #  prometheus:
+     #   enabled: true
