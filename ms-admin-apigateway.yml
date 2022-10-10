@@ -15,7 +15,7 @@ spring:
           enabled: true           
           lowerCaseServiceId: true
       routes:
-#     - id: ms-gestion-instructor
+     - id: ms-gestion-instructor
 #        uri: lb://MS-GESTION-INSTRUCTOR
 #        predicates:
 #        - Path=/ms-instructor/**
