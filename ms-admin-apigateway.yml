@@ -9,19 +9,18 @@ eureka:
          defaultZone: http://localhost:8889/eureka
 # Mapeo de Microservicios
 spring:
-
   cloud:
     gateway:
       discovery.locator:    #A           
           enabled: true           
           lowerCaseServiceId: true
       routes:
-      - id: id-ms-instructor
-        uri: lb://MS-GESTION-INSTRUCTOR
-        predicates:
-        - Path=/ms-instructor/**
-        filters:         
-        - RewritePath=/ms-instructor/(?<path>.*), /$\{path}
+#      - id: id-ms-instructor
+#        uri: lb://MS-GESTION-INSTRUCTOR
+#        predicates:
+#        - Path=/ms-instructor/**
+#        filters:         
+#        - RewritePath=/ms-instructor/(?<path>.*), /$\{path}
         
       - id: albums
         uri: https://jsonplaceholder.typicode.com/albums
