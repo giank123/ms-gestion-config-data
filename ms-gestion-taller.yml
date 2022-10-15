@@ -1,7 +1,5 @@
 server:
   port: 8083
-#  servlet:
-#    context-path: /ms-taller
     
   error:
     include-details: always
@@ -10,7 +8,7 @@ server:
 spring:
   datasource:
     url: jdbc:oracle:thin:@localhost:1521:xe
-    username: MS012021_MS_TALLER_
+    username: MS012021_MS_TALLER
     password: 1234
     driver-class-name: oracle.jdbc.driver.OracleDriver
 
@@ -21,20 +19,4 @@ eureka:
       serviceUrl:
          defaultZone: http://localhost:8889/eureka
 
-# Metrics related configurations
-management:
-  endpoint:
-    metrics:
-      enabled: true
-    prometheus:
-      enabled: true
-    gateway:
-      enabled: true   
-  endpoints:
-      web:
-        exposure:
-          include: "*"
-  metrics:
-    export:
-      prometheus:
-        enabled: true
+
